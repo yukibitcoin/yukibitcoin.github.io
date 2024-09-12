@@ -3,119 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuki Eliot with Bitcoin and Twitter Timeline</title>
+    <title>Yuki Eliot - Twitter Extraordinaire</title>
     <style>
         body {
-            margin: 0;
-            min-height: 100vh;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #1a1a2e;
+            color: #ffffff;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to bottom, #87CEEB, #E0F6FF);
+            min-height: 100vh;
+            margin: 0;
             overflow-x: hidden;
-            font-family: Arial, sans-serif;
         }
-        .name {
-            font-size: 8vw;
-            font-weight: bold;
-            z-index: 1;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 90vw;
+        .container {
+            text-align: center;
+            position: relative;
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 4em;
             margin-bottom: 20px;
+            animation: glow 2s ease-in-out infinite alternate;
         }
-        .letter {
-            display: inline-block;
-            padding: 0.5vw;
-            margin: 0.2vw;
-            border-radius: 5px;
-            animation: colorChange 5s infinite;
+        .subtitle {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeIn 2s forwards 1s;
         }
-        .bitcoin {
-            position: fixed;
-            width: 50px;
-            height: 50px;
-            background-image: url('bitcoinlogo.png');
-            background-size: cover;
-            border-radius: 50%;
-            filter: blur(1px);
-            pointer-events: none;
+        .content {
+            text-align: left;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeIn 2s forwards 1.5s;
         }
-        .twitter-timeline {
-            max-width: 90vw;
-            width: 500px;
-            height: 600px;
+        .job-info {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
             margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards 2s;
+            text-align: left;
         }
-        @keyframes fall {
-            from { transform: translateY(-10px); }
-            to { transform: translateY(100vh); }
+        .job-info h2 {
+            margin-top: 0;
         }
-        @keyframes colorChange {
-            0% { background-color: #ff9999; color: #000; }
-            25% { background-color: #99ff99; color: #000; }
-            50% { background-color: #9999ff; color: #fff; }
-            75% { background-color: #ffff99; color: #000; }
-            100% { background-color: #ff9999; color: #000; }
+        .circle {
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            animation: float 5s infinite ease-in-out;
         }
-
-        @media (max-width: 600px) {
-            .name {
-                font-size: 12vw;
-            }
-            .letter {
-                padding: 1vw;
-                margin: 0.5vw;
-            }
-            .twitter-timeline {
-                height: 400px;
-            }
+        .circle:nth-child(1) { left: -50px; top: -50px; animation-delay: 0s; }
+        .circle:nth-child(2) { right: -30px; top: 30px; animation-delay: 1s; }
+        .circle:nth-child(3) { left: 50px; bottom: -20px; animation-delay: 2s; }
+        .spotify-embed {
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn 2s forwards 2.5s;
+            width: 100%;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00de, 0 0 20px #ff00de; }
+            to { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
         }
     </style>
 </head>
 <body>
-    <div class="name">
-        <span class="letter">Y</span>
-        <span class="letter">u</span>
-        <span class="letter">k</span>
-        <span class="letter">i</span>
-        <span class="letter" style="margin-right: 2vw;"></span>
-        <span class="letter">E</span>
-        <span class="letter">l</span>
-        <span class="letter">i</span>
-        <span class="letter">o</span>
-        <span class="letter">t</span>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <h1>Yuki Eliot</h1>
+        <p class="subtitle">Twitter's Resident Chaos Agent</p>
+        <div class="content">
+            <p>Ahoy, internet denizens! I'm Yuki Eliot, your friendly neighborhood Twitter tornado. My life's mission? To turn the Twitterverse into a swirling vortex of memes, puns, and gloriously random thoughts.</p>
+            <p>My superpowers include:</p>
+            <ul>
+                <li>Crafting tweets so random, they make quantum physics look predictable</li>
+                <li>Turning mundane observations into viral sensations</li>
+                <li>Surviving on a diet of pure caffeine and Wi-Fi signals</li>
+                <li>Ability to type faster than the speed of thought (sometimes to my own detriment)</li>
+            </ul>
+        </div>
+        <div class="job-info">
+            <h2>Seeking: Professional Shitposter Position</h2>
+            <p>Are you brave enough to unleash my chaotic energy on your Twitter feed? I'm currently accepting applications for the following roles:</p>
+            <ul>
+                <li>Chief Meme Officer</li>
+                <li>Director of Random Musings</li>
+                <li>Executive Vice President of Shitposting</li>
+            </ul>
+            <p>If you're looking for someone to turn your social media strategy into a beautiful dumpster fire (in a good way), I'm your gal! Let's make the internet weird again, one tweet at a time.</p>
+        </div>
+        <div class="spotify-embed">
+            <p>While you're here, enjoy one of my favorite tracks:</p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3SbjmLekcL8tGZt3mRtQjY?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
     </div>
-
-    <a class="twitter-timeline" data-height="600" href="https://twitter.com/yuki_eliot?ref_src=twsrc%5Etfw">Tweets by yuki_eliot</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-    <script>
-        function createBitcoin() {
-            const bitcoin = document.createElement('div');
-            bitcoin.classList.add('bitcoin');
-            bitcoin.style.left = Math.random() * 100 + '%';
-            bitcoin.style.top = '-10px';
-            bitcoin.style.opacity = Math.random();
-            bitcoin.style.animation = `fall ${Math.random() * 5 + 5}s linear infinite`;
-            document.body.appendChild(bitcoin);
-
-            setTimeout(() => {
-                bitcoin.remove();
-            }, 10000);
-        }
-
-        for (let i = 0; i < 50; i++) {
-            createBitcoin();
-        }
-
-        setInterval(createBitcoin, 200);
-
-        document.querySelectorAll('.letter').forEach((letter, index) => {
-            letter.style.animationDelay = `${index * 0.2}s`;
-        });
-    </script>
 </body>
 </html>

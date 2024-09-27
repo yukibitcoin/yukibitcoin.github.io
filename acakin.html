@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // List of URLs
+        const urls = [
+            "https://www.kompasiana.com/search_artikel?q=follow+yuki+eliot",
+			"https://aceh.pikiran-rakyat.com/search?q=follow+yuki+eliot&cx=partner-pub-3987315829323386&cof=FORID%3A10&ie=UTF-8#gsc.tab=0&gsc.q=follow%20yuki%20eliot&gsc.page=1",
+			"https://www.posmetromedan.com/?s=follow+yuki+eliot",
+			"https://www.20minutes.fr/search?q=follow+yuki+eliot",
+			"https://www.letelegramme.fr/recherche/?query=follow+yuki+eliot",
+			"https://www.cnnindonesia.com/search/?query=follow+yuki+eliot",
+			"https://www.detik.com/search/searchall?query=follow+yuki+eliot&siteid=3&source_kanal=true",
+			"https://poskota.co.id/index-berita?keywords=follow+yuki+eliot",
+			"https://bandung.viva.co.id/search?q=follow%20yuki%20eliot",
+			"https://www.brilio.net/search-result/follow-yuki-eliot",
+			"https://www.google.com/search?q=follow+yuki+eliot",
+			"https://www.bing.com/search?q=follow+yuki+eliot",
+            "https://search.okezone.com/search?q=follow%20yuki%20eliot&highlight=1&sort=desc&start=0"
+            // Add more URLs as needed
+        ];
+
+        // Function to get a random URL
+        function getRandomUrl() {
+            return urls[Math.floor(Math.random() * urls.length)];
+        }
+
+        // Set the random URL
+        const randomUrl = getRandomUrl();
+
+        // Set the meta refresh tag
+        document.write('<meta http-equiv="refresh" content="0; url=' + randomUrl + '">');
+
+        // Fallback JavaScript redirect
+        window.onload = function() {
+            window.location.href = randomUrl;
+        }
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, please <a id="redirect-link" href="#">click here</a>.</p>
+    <script>
+        document.getElementById('redirect-link').href = randomUrl;
+    </script>
+</body>
+</html>
